@@ -1,3 +1,6 @@
+
+DROP TABLE IF EXISTS mst_users ;
+
 CREATE TABLE mst_users(
     user_id varchar(255),
 	register_date varchar(255),
@@ -23,3 +26,5 @@ SELECT
     ELSE ''
   END as device_name
 FROM mst_users;
+
+DROP TABLE IF EXISTS mst_users ;
